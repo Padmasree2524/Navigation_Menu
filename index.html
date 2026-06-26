@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EduLearn Academy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<nav>
+
+<h2>🎓 EduLearn Academy</h2>
+
+<ul>
+
+<li>
+<a href="#" onclick="showPage('home')">Home</a>
+</li>
+
+<li>
+<a href="#" onclick="showPage('about')">About</a>
+</li>
+
+<li>
+<a href="#" onclick="showPage('courses')">Courses</a>
+</li>
+
+<li>
+<a href="#" onclick="showPage('services')">Services</a>
+</li>
+
+<li>
+<a href="#" onclick="showPage('choose')">Why Us</a>
+</li>
+
+<li>
+<a href="#" onclick="showPage('contact')">Contact</a>
+</li>
+
+</ul>
+
+</nav>
+
+
+
+
+<!-- HOME -->
+
+<section id="home" class="page home">
+
+
+<div class="home-container">
+
+
+<div class="home-text">
+
+<h1>
+Learn Today,
+<br>
+Lead Tomorrow 🚀
+</h1>
+
+
+<p>
+Upgrade your skills with industry focused courses,
+practical training and expert guidance.
+</p>
+
+
+<div>
+
+<button>
+Start Learning
+</button>
+
+
+<button class="second-btn">
+Explore Courses
+</button>
+
+</div>
+
+
+</div>
+
+
+
+<div class="home-image">
+
+<img src="https://img.freepik.com/free-vector/online-learning-concept-illustration_114360-6186.jpg">
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="stats">
+
+
+<div>
+<h2>5000+</h2>
+<p>Students</p>
+</div>
+
+
+<div>
+<h2>50+</h2>
+<p>Courses</p>
+</div>
+
+
+<div>
+<h2>100+</h2>
+<p>Projects</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ABOUT -->
+
+<section id="about" class="page">
+
+
+<h1>About Us</h1>
+
+
+<p>
+EduLearn Academy provides quality education with
+practical learning and career focused programs.
+</p>
+
+
+<p>
+Our mission is to help students develop technical
+skills and achieve their career goals.
+</p>
+
+
+</section>
+
+
+
+
+
+
+<!-- COURSES -->
+
+<section id="courses" class="page">
+
+
+<h1>Our Courses</h1>
+
+
+<div class="cards">
+
+
+<div class="box">
+<h2>💻 Web Development</h2>
+<p>
+HTML, CSS, JavaScript, React and modern website development.
+</p>
+</div>
+
+
+<div class="box">
+<h2>📱 App Development</h2>
+<p>
+Create mobile applications using latest technologies.
+</p>
+</div>
+
+
+<div class="box">
+<h2>📊 Data Science</h2>
+<p>
+Python, AI, Machine Learning and Data Analysis.
+</p>
+</div>
+
+
+<div class="box">
+<h2>🎨 UI/UX Design</h2>
+<p>
+Design beautiful user interfaces using modern tools.
+</p>
+</div>
+
+
+<div class="box">
+<h2>☁️ Cloud Computing</h2>
+<p>
+Learn cloud platforms and deployment.
+</p>
+</div>
+
+
+<div class="box">
+<h2>🔐 Cyber Security</h2>
+<p>
+Learn digital security and protection.
+</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- SERVICES -->
+
+<section id="services" class="page">
+
+
+<h1>Our Services</h1>
+
+
+<div class="cards">
+
+
+<div class="box">
+<h2>🎓 Online Training</h2>
+<p>
+Live classes with practical sessions.
+</p>
+</div>
+
+
+<div class="box">
+<h2>🚀 Internship Support</h2>
+<p>
+Real time project experience.
+</p>
+</div>
+
+
+<div class="box">
+<h2>💼 Career Guidance</h2>
+<p>
+Career planning and placement support.
+</p>
+</div>
+
+
+<div class="box">
+<h2>📚 Study Materials</h2>
+<p>
+Learning resources and notes.
+</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- WHY US -->
+
+
+<section id="choose" class="page">
+
+
+<h1>Why Choose EduLearn?</h1>
+
+
+<div class="cards">
+
+
+<div class="box">
+<h2>👨‍🏫 Expert Trainers</h2>
+<p>
+Learn from experienced trainers.
+</p>
+</div>
+
+
+<div class="box">
+<h2>💻 Practical Learning</h2>
+<p>
+Work on real time projects.
+</p>
+</div>
+
+
+<div class="box">
+<h2>🏆 Certification</h2>
+<p>
+Get certificates after completion.
+</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section id="contact" class="page">
+
+
+<h1>Contact Us</h1>
+
+
+<p>📧 Email: edulearn@gmail.com</p>
+
+<p>📞 Phone: 9876543210</p>
+
+<p>📍 Location: Hyderabad, India</p>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 EduLearn Academy | All Rights Reserved
+</p>
+
+</footer>
+
+
+
+
+
+<script>
+
+function showPage(pageId){
+
+
+let pages=document.querySelectorAll(".page");
+
+
+pages.forEach(function(page){
+
+page.style.display="none";
+
+});
+
+
+document.getElementById(pageId).style.display="block";
+
+
+window.scrollTo({
+
+top:0,
+behavior:"smooth"
+
+});
+
+
+}
+
+
+</script>
+
+
+</body>
+</html>
